@@ -26,6 +26,6 @@ const hasUniqueChars = (s) => {
 };
 
 //Solution 2:
-const hasUniqueChars = (s) => {
+const hasUniqueCharss = (s) => {
   return newSet(s).size === s.length;
 };
