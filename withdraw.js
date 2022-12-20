@@ -1,3 +1,4 @@
+//Tuesday Algorithm Assessment
 // An ATM only has 100, 50 and 20 dollar bills (USD) available to be dispensed.
 // Given an amount between 40 and 10000 dollars (inclusive) and
 //assuming that the ATM wants to use as few bills as possible, determinate the minimal number of 100, 50 and 20 dollar bills
@@ -22,27 +23,26 @@
 //The counts of 100, 50, and 20 dollar bills respectively. * /
 
 function withdraw(amount) {
-    let result = [];
-    let hundred = 0;
-    let fifty = 0;
-    let twenty = 0;
-    while (amount >= 100) {
-        amount -= 100;
-        hundred++;
-    }
-    while (amount >= 50) {
-        amount -= 50;
-        fifty++;
-    }
-    while (amount >= 20) {
-        amount -= 20;
-        twenty++;
-    }
-    result.push(hundred, fifty, twenty);
-    return result;
+  let result = [];
+  let hundred = 0;
+  let fifty = 0;
+  let twenty = 0;
+  while (amount >= 100) {
+    amount -= 100;
+    hundred++;
+  }
+  while (amount >= 50) {
+    amount -= 50;
+    fifty++;
+  }
+  while (amount >= 20) {
+    amount -= 20;
+    twenty++;
+  }
+  result.push(hundred, fifty, twenty);
+  return result;
 }
 
 console.log(withdraw(250));
 console.log(withdraw(260));
 console.log(withdraw(370));
-
